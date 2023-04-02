@@ -21,10 +21,12 @@ type Env struct {
 	RefreshTokenSecret     string `mapstructure:"REFRESH_TOKEN_SECRET"`
 }
 
+//load the .env file and unmarshal it into the above created Env struct.
 func NewEnv() *Env {
 	env := Env{}
+	//provide the file .env to the viper using the SetConfigFile method
 	viper.SetConfigFile(".env")
-
+	//read and finally unmarshal it into the Env struct
 	err := viper.ReadInConfig()
 	if err != nil {
 		log.Fatal("Can't find the file .env : ", err)
