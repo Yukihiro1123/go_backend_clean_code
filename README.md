@@ -2,6 +2,8 @@
 
 repository -> usecase -> controller -> router
 
+domain で usecase のインターフェースを定義したら、usecase ファイルのインターフェース内で定義したメソッド群をポインタレシーバにする usecase を作成
+
 ### Router
 
 First of all, the request comes to the Router.
