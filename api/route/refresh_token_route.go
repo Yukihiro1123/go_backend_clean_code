@@ -8,8 +8,9 @@ import (
 	"go_backend_clean_code/usecase"
 	"time"
 
+	"go_backend_clean_code/mongo"
+
 	"github.com/gin-gonic/gin"
-	"go.mongodb.org/mongo-driver/mongo"
 )
 
 func NewRefreshTokenRouter(env *bootstrap.Env, timeout time.Duration, db mongo.Database, group *gin.RouterGroup) {

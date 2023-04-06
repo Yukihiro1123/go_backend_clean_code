@@ -1,0 +1,36 @@
+# POST http://localhost:8080/signup HTTP/1.1
+# content-type: application/json
+
+# {
+#     "email": "test@gmail.com",
+#     "password": "test",
+#     "name": "test name"
+# }
+
+# POST http://localhost:8080/login HTTP/1.1
+# content-type: application/json
+
+# {
+#      "email": "test@gmail.com",
+#      "password": "test"
+# }
+
+# GET http://localhost:8080/profile
+# Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdCBuYW1lIiwiaWQiOiI2NDJlNTgyMTI5YWIzODFiMzQxMjMyNWUiLCJleHAiOjE2ODA3NjY1Mjl9.00lPKwcv16dpOZmcWBJXZ7EFKbdeaPXRtX3GGA-mhB8
+
+# POST http://localhost:8080/task
+# content-type: application/json
+# Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdCBuYW1lIiwiaWQiOiI2NDJlNTgyMTI5YWIzODFiMzQxMjMyNWUiLCJleHAiOjE2ODA3NjY1Mjl9.00lPKwcv16dpOZmcWBJXZ7EFKbdeaPXRtX3GGA-mhB8
+
+# {
+#     "title": "Test task5"
+# }
+
+GET http://localhost:8080/task
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdCBuYW1lIiwiaWQiOiI2NDJlNTgyMTI5YWIzODFiMzQxMjMyNWUiLCJleHAiOjE2ODA3NjY1Mjl9.00lPKwcv16dpOZmcWBJXZ7EFKbdeaPXRtX3GGA-mhB8
+
+POST http://localhost:8080/refresh
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYjdmZjgwMWVjNDRiOGE3NThkYzc5OCIsImV4cCI6MTY3MzYwNzc0NH0.hi5l3vzrq0N6H99-YjAhIaPVSeQB7eP47x4ay1F3RSE"
+}

@@ -14,6 +14,6 @@ func App() Applicaton {
 	return *app
 }
 
-func (app *Applicaton) CloseMongoDBConnection() {
+func (app *Applicaton) CloseDBConnection() {
 	CloseMongoDBConnection(app.Mongo)
 }

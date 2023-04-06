@@ -4,9 +4,10 @@ import (
 	"context"
 	"go_backend_clean_code/domain"
 
+	"go_backend_clean_code/mongo"
+
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
-	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 

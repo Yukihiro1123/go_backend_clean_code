@@ -103,3 +103,11 @@ decodes and extracts the ID that was encoded while creating the token
 jwt_auth_middleware.go
 
 takes the access secret key as an input parameter
+
+```sh
+
+brew services start mongodb-community
+
+brew services stop mongodb-community
+
+```
