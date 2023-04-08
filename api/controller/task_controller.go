@@ -12,6 +12,7 @@ type TaskController struct {
 	TaskUsecase domain.TaskUsecase
 }
 
+//gin.Context を使うことで、URL に付随したパラメータの取得や POST で送信されたデータの取得などを行うことが可能
 func (tc *TaskController) Create(c *gin.Context) {
 	var task domain.Task
 	//jsonをtask structにエンコード
